@@ -1,10 +1,17 @@
+import hamburger from './icons/hamburger.png'
+import donut from './icons/donut.png'
+import frenchfries from './icons/french-fries.png'
+import friedchicken from './icons/fried-chicken.png'
+import ramen from './icons/ramen.png'
+import taco from './icons/taco.png'
+
 const products = [
-  { name: "Burger", pricePerUnit: 200, img: "../icons/hamburger.png" },
-  { name: "Donut", pricePerUnit: 400, color: "#008673" },
-  { name: "French fries", pricePerUnit: 250, color: "#fe8500" },
-  { name: "Fried chicken", pricePerUnit: 800, color: "#452f18" },
-  { name: "Ramen", pricePerUnit: 325, color: "#9753e1" },
-  { name: "Taco", pricePerUnit: 475, color: "#34bc6e" },
+  { name: "Burger", pricePerUnit: 200, img: hamburger },
+  { name: "Donut", pricePerUnit: 400, img: donut },
+  { name: "French fries", pricePerUnit: 250, img: frenchfries },
+  { name: "Fried chicken", pricePerUnit: 800, img: friedchicken },
+  { name: "Ramen", pricePerUnit: 325, img: ramen },
+  { name: "Taco", pricePerUnit: 475, img: taco },
 ];
 
 export default products;

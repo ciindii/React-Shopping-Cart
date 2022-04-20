@@ -1,0 +1,66 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  background-image: linear-gradient(
+    to right top,
+    #ffffff,
+    #e3e4ef,
+    #c5cae0,
+    #a4b1d1,
+    #7f9ac2
+  );
+}
+.container {
+  height: 300px;
+  padding: 40px 60px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container:hover {
+}
+.icon {
+  display: block;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1 rem;
+  padding: 5px 0;
+}
+
+.price {
+  margin-bottom: 30px;
+}
+
+button {
+  position: relative;
+  text-align: center;
+  display: block;
+  width: 120px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-container {
+}
+
+svg {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 3.5px;
+  left: -15px;
+  color: #fff;
+  background-color: #7f9ac2;
+}
+
+button:hover {
+  background-color: #7f9ac2;
+  color: #fff;
+  transition: 200ms;
+}

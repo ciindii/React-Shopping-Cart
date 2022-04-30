@@ -10,16 +10,18 @@ export const AppContextProvider = props => {
   const [totalCartPrice, setTotalCartPrice] = React.useState(0);
 
   const filterProductsByName = React.useCallback(name => {}, []);
+
   const addProductToCart = React.useCallback(product => {
     setShoppingCart((prevState) => [
       ...prevState,
       product
     ])
   }, []);
-  const removeProductFromCartAtIndex = React.useCallback(index => {
-    setShoppingCart(shoppingCart.filter((item, i) => i !== index))
-  }, []);
 
+  const removeProductFromCartAtIndex = React.useCallback((index) => {
+    setShoppingCart(currentShoppingCart => currentShoppingCart.filter((item, i) => i))
+  }, [setShoppingCart]);
+  
   React.useEffect(() => {
     setTotalCartPrice(0);
   }, [shoppingCart]);

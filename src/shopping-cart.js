@@ -3,6 +3,7 @@ import React, {useContext} from "react";
 import AppContext from "./context";
 import {VscTrash} from 'react-icons/vsc'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { BsHr } from "react-icons/bs";
 
 
 const ShoppingCart = () => {
@@ -11,12 +12,12 @@ const ShoppingCart = () => {
   return (
     <div className="shopping-cart">Shopping Cart
       <ul>
-        {shoppingCart.map((item, i) => (
-        <li key={i}>
+        {shoppingCart.map((item, index) => (
+        <li key={index}>
           <span className='count'>1</span> 
           <span>{item.name}</span>
           <span>$0.00</span>
-        <button onClick={() => {actions.removeProductFromCartAtIndex(i)}}><VscTrash /></button></li>
+        <button onClick={() => {actions.removeProductFromCartAtIndex(index)}}><VscTrash /></button></li>
       ))}
       </ul>
       <div className="total">
@@ -28,3 +29,5 @@ const ShoppingCart = () => {
 }
 
 export default ShoppingCart;
+
+
